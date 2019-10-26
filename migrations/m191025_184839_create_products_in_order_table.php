@@ -16,7 +16,7 @@ class m191025_184839_create_products_in_order_table extends Migration
             'id' => $this->primaryKey(),
             'order_id' => $this->integer(),
             'product_id' => $this->integer(),
-            'count' => $this->integer(),
+            'count' => $this->integer()->notNull(),
         ]);
 
         $this->addForeignKey(
